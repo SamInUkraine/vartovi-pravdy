@@ -25,6 +25,10 @@ jobs:
           distribution: temurin
           java-version: 21
 
+      - name: Постійний ключ підпису тестових збірок
+        working-directory: .
+        run: mkdir -p ~/.android && cp app/debug.keystore ~/.android/debug.keystore
+
       - name: Встановити Capacitor
         run: npm install --no-audit --no-fund
 
@@ -33,6 +37,7 @@ jobs:
           npx cap add android
           npx @capacitor/assets generate --android --iconBackgroundColor '#0a1726' --splashBackgroundColor '#0a1726'
           npx cap sync android
+          sed -i 's/<application/<application android:largeHeap="true"/' android/app/src/main/AndroidManifest.xml
 
       - name: Номер версії
         run: |
