@@ -25,6 +25,10 @@ jobs:
           distribution: temurin
           java-version: 21
 
+      - name: Постійний ключ підпису тестових збірок
+        working-directory: .
+        run: mkdir -p ~/.android && cp app/debug.keystore ~/.android/debug.keystore
+
       - name: Встановити Capacitor
         run: npm install --no-audit --no-fund
 
