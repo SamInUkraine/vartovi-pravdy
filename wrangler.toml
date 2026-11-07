@@ -1,6 +1,8 @@
 name = "vartovi-gemini"
 main = "src/index.js"
 compatibility_date = "2026-10-01"
+# Не видаляти змінні, додані в панелі Cloudflare, під час розгортання з GitHub
+keep_vars = true
 
 [vars]
 # Звідки дозволені запити. "*" — будь-звідки (зручно для HTML-файлу і застосунку).
