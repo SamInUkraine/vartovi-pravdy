@@ -1,0 +1,9 @@
+{
+  "appId": "com.istorychnirozumy.vartovipravdy",
+  "appName": "Вартові правди",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": false,
+    "backgroundColor": "#0a1726"
+  }
+}
