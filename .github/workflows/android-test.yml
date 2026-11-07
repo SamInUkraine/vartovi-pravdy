@@ -24,6 +24,8 @@ jobs:
           npx cap add android
           npx @capacitor/assets generate --android --iconBackgroundColor '#0a1726' --splashBackgroundColor '#0a1726'
           npx cap sync android
+          sed -i 's/<application /<application android:largeHeap="true" /' android/app/src/main/AndroidManifest.xml
+          grep -c largeHeap android/app/src/main/AndroidManifest.xml
           cd android && ./gradlew assembleDebug --no-daemon -q
           grep -E "minSdkVersion|targetSdkVersion|compileSdkVersion" variables.gradle || true
       - name: Enable KVM
