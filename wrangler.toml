@@ -1,0 +1,24 @@
+name = "vartovi-gemini"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+# Звідки дозволені запити. "*" — будь-звідки (зручно для HTML-файлу і застосунку).
+# Для суворішого режиму: "https://localhost,capacitor://localhost,https://ваш-сайт"
+ALLOWED_ORIGINS = "*"
+# Спільний денний ліміт перевірок на модель (трохи нижче за ліміт Google)
+RPD_35 = "450"
+RPD_31 = "450"
+# Ліміти для одного пристрою
+IP_PER_MIN = "6"
+IP_PER_DAY = "150"
+# Максимальна довжина відповіді гравця, символів
+MAX_ANSWER = "1500"
+
+[[durable_objects.bindings]]
+name = "GATE"
+class_name = "Gate"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Gate"]
