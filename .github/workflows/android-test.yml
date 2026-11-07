@@ -2,8 +2,6 @@ name: Android emulator test
 
 on:
   workflow_dispatch:
-  push:
-    branches: ["android-fix"]
 
 jobs:
   test:
