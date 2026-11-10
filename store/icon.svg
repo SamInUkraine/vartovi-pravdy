@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<defs>
+ <radialGradient id="sky" cx="256" cy="170" r="420" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#20537f"/><stop offset=".45" stop-color="#10284a"/><stop offset="1" stop-color="#050c18"/></radialGradient>
+ <radialGradient id="glow" cx="256" cy="178" r="150" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fffbe0"/><stop offset=".18" stop-color="#ffe27a" stop-opacity=".9"/><stop offset=".5" stop-color="#ffb81c" stop-opacity=".35"/><stop offset="1" stop-color="#ff9d00" stop-opacity="0"/></radialGradient>
+ <linearGradient id="beamR" x1="0" x2="1"><stop offset="0" stop-color="#fff1a8" stop-opacity=".95"/><stop offset=".55" stop-color="#ffd24a" stop-opacity=".35"/><stop offset="1" stop-color="#ffd24a" stop-opacity="0"/></linearGradient>
+ <linearGradient id="beamL" x1="1" x2="0"><stop offset="0" stop-color="#fff1a8" stop-opacity=".8"/><stop offset=".55" stop-color="#ffd24a" stop-opacity=".25"/><stop offset="1" stop-color="#ffd24a" stop-opacity="0"/></linearGradient>
+ <linearGradient id="tower" x1="0" x2="1"><stop offset="0" stop-color="#b9b3a6"/><stop offset=".35" stop-color="#fbf8f0"/><stop offset=".6" stop-color="#ece6d8"/><stop offset="1" stop-color="#8f8a7e"/></linearGradient>
+ <linearGradient id="red" x1="0" x2="1"><stop offset="0" stop-color="#8e1710"/><stop offset=".38" stop-color="#e3392b"/><stop offset=".62" stop-color="#cc2a1e"/><stop offset="1" stop-color="#7a120c"/></linearGradient>
+ <linearGradient id="gold" x1="0" x2="1"><stop offset="0" stop-color="#9c6c0e"/><stop offset=".45" stop-color="#ffe07a"/><stop offset=".6" stop-color="#f6bd22"/><stop offset="1" stop-color="#8f600a"/></linearGradient>
+ <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14365a"/><stop offset="1" stop-color="#06111f"/></linearGradient>
+ <linearGradient id="rock" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a4452"/><stop offset="1" stop-color="#151a22"/></linearGradient>
+</defs>
+<rect width="512" height="512" fill="url(#sky)"/>
+<g fill="#fff">
+ <circle cx="62" cy="70" r="2.2" opacity=".8"/><circle cx="118" cy="38" r="1.6" opacity=".6"/><circle cx="430" cy="58" r="2" opacity=".75"/><circle cx="470" cy="128" r="1.5" opacity=".55"/>
+ <circle cx="40" cy="160" r="1.4" opacity=".5"/><circle cx="388" cy="28" r="1.4" opacity=".55"/><circle cx="160" cy="96" r="1.2" opacity=".5"/><circle cx="352" cy="102" r="1.3" opacity=".5"/>
+</g>
+<path d="M256 178 L512 96 L512 262 Z" fill="url(#beamR)"/>
+<path d="M256 178 L0 112 L0 246 Z" fill="url(#beamL)"/>
+<circle cx="256" cy="178" r="150" fill="url(#glow)"/>
+<!-- sea -->
+<rect y="404" width="512" height="108" fill="url(#sea)"/>
+<path d="M0 420 Q32 410 64 420 T128 420 T192 420 T256 420 T320 420 T384 420 T448 420 T512 420" fill="none" stroke="#3c7bb5" stroke-width="3" opacity=".7"/>
+<path d="M0 452 Q40 442 80 452 T160 452 T240 452 T320 452 T400 452 T480 452 T560 452" fill="none" stroke="#2a5d8f" stroke-width="3" opacity=".6"/>
+<path d="M0 484 Q48 474 96 484 T192 484 T288 484 T384 484 T480 484 T576 484" fill="none" stroke="#1f4a76" stroke-width="3" opacity=".5"/>
+<path d="M190 420 L322 420" stroke="#ffd24a" stroke-width="6" opacity=".35" stroke-linecap="round"/>
+<path d="M212 446 L300 446" stroke="#ffd24a" stroke-width="5" opacity=".22" stroke-linecap="round"/>
+<!-- rock -->
+<path d="M120 430 Q150 372 214 360 L298 360 Q362 372 392 430 Z" fill="url(#rock)"/>
+<path d="M150 430 Q178 392 226 384 L286 384 Q334 392 362 430 Z" fill="#11161d" opacity=".55"/>
+<!-- tower -->
+<path d="M214 236 L298 236 L322 372 L190 372 Z" fill="url(#tower)"/>
+<path d="M207 276 L305 276 L311 312 L201 312 Z" fill="url(#red)"/>
+<path d="M196 338 L316 338 L320 366 L192 366 Z" fill="url(#red)"/>
+<rect x="246" y="318" width="20" height="18" rx="9" fill="#2a2f38" opacity=".8"/>
+<rect x="186" y="364" width="140" height="12" rx="4" fill="#5f5a50"/>
+<!-- gallery -->
+<rect x="196" y="224" width="120" height="16" rx="5" fill="url(#gold)"/>
+<path d="M202 224 v-10 M220 224 v-10 M238 224 v-10 M256 224 v-10 M274 224 v-10 M292 224 v-10 M310 224 v-10" stroke="#c99a2c" stroke-width="3"/>
+<rect x="198" y="210" width="116" height="5" rx="2.5" fill="#d9a93a"/>
+<!-- lantern -->
+<rect x="222" y="150" width="68" height="64" rx="6" fill="#262a31"/>
+<rect x="230" y="157" width="52" height="52" rx="4" fill="#fff6c2"/>
+<rect x="230" y="157" width="52" height="52" rx="4" fill="url(#glow)"/>
+<path d="M247.5 157v52M264.5 157v52" stroke="#262a31" stroke-width="5"/>
+<!-- roof -->
+<path d="M212 154 Q256 92 300 154 Z" fill="url(#gold)"/>
+<rect x="210" y="148" width="92" height="10" rx="4" fill="url(#gold)"/>
+<circle cx="256" cy="104" r="9" fill="url(#gold)"/>
+<path d="M256 95 v-14" stroke="#e8b923" stroke-width="4" stroke-linecap="round"/>
+</svg>
